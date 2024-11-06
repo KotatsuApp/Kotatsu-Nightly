@@ -8,7 +8,7 @@ Kotatsu is a free and open-source manga reader for Android with built-in online 
 
 - Kotatsu Nightly builds cannot be overwritten with [Kotatsu](https://github.com/KotatsuApp/Kotatsu) (Completely different Application).
 - Kotatsu Nightly will be tested at 23:00 UTC+7 every day by [Draken](https://github.com/dragonx943), and a new Nightly build will be published at 00:00 UTC every day.
-- Kotatsu Nightly is likely a Alpha / Beta version of [Kotatsu](https://github.com/KotatsuApp/Kotatsu) so it will be **Unstable / more Bugs / more Errors than Kotatsu (NOT RECOMMENDED to use it as the main App)**.
+- Kotatsu Nightly is likely a Alpha / Beta version of [Kotatsu](https://github.com/KotatsuApp/Kotatsu) so it can be **Unstable / more Bugs / more Errors than Kotatsu (NOT RECOMMENDED to use it as the main App)**.
 
 ### Download
 
