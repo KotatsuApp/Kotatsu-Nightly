@@ -38,6 +38,7 @@ jobs:
         id: tagger
         run: |
           echo "new_tag=$(date +'%Y%m%d')" >> $GITHUB_OUTPUT
+          echo "formatted_date=$(date +'%Y/%m/%d')" >> $GITHUB_OUTPUT
 
       - name: "Build Nightly APK"
         run: >-
@@ -65,6 +66,6 @@ jobs:
         with:
           tag_name: nightly-${{ steps.tagger.outputs.new_tag }}
           name: "Nightly Build ${{ steps.tagger.outputs.new_tag }}"
-          body: "Automated nightly build generated on ${{ steps.tagger.outputs.new_tag }}"
+          body: "Automated nightly build generated on ${{ steps.tagger.outputs.formatted_date }}"
           files: ${{ env.SIGNED_APK }}
           prerelease: false
