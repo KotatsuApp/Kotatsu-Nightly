@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          ref: base
 
       - uses: actions/setup-java@v4
         with:
@@ -26,7 +28,8 @@ jobs:
       - name: Pull upstream
         run: |
           git remote add upstream https://github.com/KotatsuApp/Kotatsu-Nightly.git
-          git pull upstream base
+          git fetch upstream base
+          git reset --hard upstream/base
 
       - name: Grant permissions
         run: chmod a+x gradlew
