@@ -1,0 +1,67 @@
+name: Checkout & Build App
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          android_sdk_version: '35.0.0'
+          android_build_tools_version: '35.0.0'
+
+      - name: Pull upstream
+        run: |
+          git remote add upstream https://github.com/KotatsuApp/Kotatsu-Nightly.git
+          git pull upstream base
+
+      - name: Grant permissions
+        run: chmod a+x gradlew
+
+      - name: Generate version name
+        id: tagger
+        run: |
+          echo "new_tag=$(date +'%Y%m%d')" >> $GITHUB_OUTPUT
+
+      - name: "Build Nightly APK"
+        run: >-
+          ./gradlew assembleNightly
+          -DparsersVersionOverride=$(curl -s https://api.github.com/repos/kotatsuapp/kotatsu-parsers/commits/master -H "Accept: application/vnd.github.sha" | cut -c -10)
+
+      - name: Sign APK
+        uses: ilharp/sign-android-release@v1
+        id: sign_app
+        with:
+          releaseDir: app/build/outputs/apk/nightly
+          signingKey: ${{ secrets.ANDROID_SIGNING_KEY }}
+          keyAlias: ${{ secrets.ANDROID_KEY_ALIAS }}
+          keyStorePassword: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
+          buildToolsVersion: 35.0.0
+
+      - name: Prepare to Upload
+        run: |
+          mv ${{steps.sign_app.outputs.signedFile}} app/build/outputs/apk/nightly/release.apk
+          echo "SIGNED_APK=app/build/outputs/apk/nightly/release.apk" >> $GITHUB_ENV
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: nightly-${{ steps.tagger.outputs.new_tag }}
+          name: "Nightly Build ${{ steps.tagger.outputs.new_tag }}"
+          body: "Automated nightly build generated on ${{ steps.tagger.outputs.new_tag }}"
+          files: ${{ env.SIGNED_APK }}
+          prerelease: false
