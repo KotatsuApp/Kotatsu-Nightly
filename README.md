@@ -8,7 +8,7 @@ Kotatsu is a free and open-source manga reader for Android with built-in online 
 
 - Kotatsu Nightly builds cannot be overwritten with [Kotatsu](https://github.com/KotatsuApp/Kotatsu) (Completely different Application).
 - Kotatsu Nightly will be built and tested at 19:00 UTC+7 every day, and a new Nightly build will be published 4 hours later (same time zone).
-- Kotatsu Nightly is likely a Alpha / Beta version of Kotatsu so it will be **Unstable / more Bugs / more Errors than Kotatsu (NOT RECOMMENDED to use it as the main App)**.
+- Kotatsu Nightly is likely a Alpha / Beta version of [Kotatsu](https://github.com/KotatsuApp/Kotatsu) so it will be **Unstable / more Bugs / more Errors than Kotatsu (NOT RECOMMENDED to use it as the main App)**.
 
 ### Download
 
@@ -16,7 +16,7 @@ Kotatsu is a free and open-source manga reader for Android with built-in online 
 - Download and install APK from **[GitHub Releases](https://github.com/KotatsuApp/Kotatsu/releases/latest)**. Application has a built-in self-updating feature.
 - Get it on **[F-Droid](https://f-droid.org/packages/org.koitharu.kotatsu)**. The F-Droid build may be a bit outdated and some fixes might be missing.
 
-**Kotatsu Nightly (Experiment, not recommended):**
+**Kotatsu Nightly (Experiment, NOT RECOMMENDED):**
 - Download and install APK from **[GitHub Releases](https://github.com/KotatsuApp/Kotatsu-Nightly/releases/latest)**. Application has a built-in self-updating feature.
 
 ### Main Features
@@ -31,6 +31,7 @@ Kotatsu is a free and open-source manga reader for Android with built-in online 
 * Notifications about new chapters with updates feed
 * Integration with manga tracking services: Shikimori, AniList, MyAnimeList, Kitsu
 * Password/fingerprint-protected access to the app
+* Latest manga sources update + Experimental features!
 
 ### Screenshots
 
