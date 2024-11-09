@@ -61,11 +61,22 @@ jobs:
           mv ${{steps.sign_app.outputs.signedFile}} app/build/outputs/apk/nightly/release.apk
           echo "SIGNED_APK=app/build/outputs/apk/nightly/release.apk" >> $GITHUB_ENV
 
+      - name: CHANGELOG ???
+        id: changelog
+        run: |
+          CHANGELOG=$(cat CHANGELOG.txt)
+          echo "content<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGELOG" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: nightly-${{ steps.tagger.outputs.new_tag }}
           name: "Nightly Build ${{ steps.tagger.outputs.new_tag }}"
-          body: "Automated nightly build generated on ${{ steps.tagger.outputs.formatted_date }}"
+          body: |
+            Automated nightly build generated on ${{ steps.tagger.outputs.formatted_date }}
+
+            ${{ steps.changelog.outputs.content }}
           files: ${{ env.SIGNED_APK }}
           prerelease: false
