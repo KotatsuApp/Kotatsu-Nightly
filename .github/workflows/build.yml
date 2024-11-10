@@ -6,7 +6,25 @@ on:
   workflow_dispatch:
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      should_build: ${{ steps.check-updates.outputs.has_changes }}
+    steps:
+      - id: check-updates
+        run: |
+          last_run=$(curl -s "https://api.github.com/repos/${{ github.repository }}/actions/workflows/build.yml/runs?status=completed&per_page=1" | jq -r '.workflow_runs[0].created_at')
+          kotatsu_updated=$(curl -s "https://api.github.com/repos/KotatsuApp/Kotatsu/commits?since=$last_run" | jq '. | length')
+          parsers_updated=$(curl -s "https://api.github.com/repos/KotatsuApp/kotatsu-parsers/commits?since=$last_run" | jq '. | length')
+          if [ "$kotatsu_updated" -gt "0" ] || [ "$parsers_updated" -gt "0" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
   build:
+    needs: check
+    if: needs.check.outputs.should_build == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
