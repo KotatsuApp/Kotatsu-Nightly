@@ -1,12 +1,12 @@
 <div align="center">
 
 <a href="https://kotatsu.app">
-    <img src="./.github/logo.png" alt="Kotatsu" title="Kotatsu" width="80"/>
+    <img src="./.github/logo.png" alt="Kotatsu Logo" title="Kotatsu" width="150"/>
 </a>
 
 # [Kotatsu Nightly](#)
 
-Kotatsu is a free and open-source manga reader for Android with built-in online content sources. Kotatsu Nightly is a **Fork** of Kotatsu with experimental features and latest sources update!
+**Kotatsu is a free and open-source manga reader for Android with built-in online content sources**. **Kotatsu Nightly** is **a Fork of Kotatsu** with **experimental features** and **latest sources update**!
 
 [![Sources count](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2FKotatsuApp%2Fkotatsu-parsers%2Frefs%2Fheads%2Fmaster%2F.github%2Fsummary.yaml&query=total&label=manga%20sources&color=%23E9321C)](https://github.com/KotatsuApp/kotatsu-parsers) ![Android 5.0](https://img.shields.io/badge/android-5.0+-brightgreen) [![weblate](https://hosted.weblate.org/widgets/kotatsu/-/strings/svg-badge.svg)](https://hosted.weblate.org/engage/kotatsu/) [![Telegram](https://img.shields.io/badge/chat-telegram-60ACFF)](https://t.me/kotatsuapp) [![Discord](https://img.shields.io/discord/898363402467045416?color=5865f2&label=discord)](https://discord.gg/NNJ5RgVBC5) [![License](https://img.shields.io/github/license/KotatsuApp/Kotatsu)](https://github.com/KotatsuApp/Kotatsu/blob/devel/LICENSE)
 
@@ -24,10 +24,10 @@ Kotatsu is a free and open-source manga reader for Android with built-in online 
 
 <div align="left">
 
-**<img src="./.github/logo.png" alt="Kotatsu logo" width="15" style="vertical-align: middle;"/> Kotatsu Nightly:**
+**<img src="./.github/logo.png" alt="Kotatsu Logo" width="16" style="vertical-align: text-bottom;"/> Kotatsu Nightly:**
 - Download and install APK from **[GitHub Releases](https://github.com/KotatsuApp/Kotatsu-Nightly/releases/latest)**. Application has a built-in self-updating feature.
 
-**<img src="./.github/logo.png" alt="Kotatsu logo" width="15" style="vertical-align: middle;"/> Kotatsu (Recommended):**
+**<img src="./.github/logo.png" alt="Kotatsu Logo" width="16" style="vertical-align: text-bottom;"/> Kotatsu (Recommended):**
 - Download and install APK from **[GitHub Releases](https://github.com/KotatsuApp/Kotatsu/releases/latest)**. Application has a built-in self-updating feature.
 - Get it on **[F-Droid](https://f-droid.org/packages/org.koitharu.kotatsu)**. The F-Droid build may be a bit outdated and some fixes might be missing (not recommended).
 
@@ -45,10 +45,10 @@ Kotatsu is a free and open-source manga reader for Android with built-in online 
 * Tablet-optimized Material You UI
 * Standard and Webtoon-optimized customizable reader
 * Notifications about new chapters with updates feed
-* Integration with manga tracking services: Shikimori, AniList, MyAnimeList, Kitsu
+* Integration with manga tracking services: [Shikimori](https://shikimori.one), [AniList](https://anilist.co/), [MyAnimeList](https://myanimelist.net/), [Kitsu](https://kitsu.app/)
 * Password/fingerprint-protected access to the app
 * Get almost all the features from the Beta / RC versions of Kotatsu but without any data loss
-* Latest manga sources update from Parsers + Experimental features!
+* Latest manga sources update from [Kotatsu Parsers](https://github.com/KotatsuApp/Kotatsu-parsers) + Experimental features!
 
 </div>
 
