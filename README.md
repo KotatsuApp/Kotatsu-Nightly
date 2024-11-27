@@ -24,10 +24,10 @@
 
 <div align="left">
 
-**<img src="./.github/logo.png" alt="Kotatsu Logo" width="16" style="vertical-align: text-bottom;"/> Kotatsu Nightly:**
+**<img src="./.github/app_icon.png" alt="Kotatsu Logo" width="16" style="vertical-align: bottom;"/> Kotatsu Nightly:**
 - Download and install APK from **[GitHub Releases](https://github.com/KotatsuApp/Kotatsu-Nightly/releases/latest)**. Application has a built-in self-updating feature.
 
-**<img src="./.github/logo.png" alt="Kotatsu Logo" width="16" style="vertical-align: text-bottom;"/> Kotatsu (Recommended):**
+**<img src="./.github/app_icon.png" alt="Kotatsu Logo" width="16" style="vertical-align: bottom;"/> Kotatsu (Recommended):**
 - Download and install APK from **[GitHub Releases](https://github.com/KotatsuApp/Kotatsu/releases/latest)**. Application has a built-in self-updating feature.
 - Get it on **[F-Droid](https://f-droid.org/packages/org.koitharu.kotatsu)**. The F-Droid build may be a bit outdated and some fixes might be missing (not recommended).
 
