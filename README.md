@@ -77,6 +77,7 @@ please head over to the [Weblate project page](https://hosted.weblate.org/engage
 
 <br/>
 
+
 **And thanks also to everyone who contributed to the Kotatsu-parsers!**
 
 <a href="https://github.com/KotatsuApp/Kotatsu-parsers/graphs/contributors">
