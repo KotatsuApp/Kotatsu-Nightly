@@ -113,7 +113,7 @@ jobs:
           ref: nightly
           fetch-depth: 0
 
-      - name: Update build number
+      - name: Get Build Number
         run: |
           VERSION_NUMBER="${{ needs.build.outputs.new_tag }}"
           COUNTER_LINKS=""
@@ -124,14 +124,14 @@ jobs:
           
           sed -i "/### \[Latest Build Number of Kotatsu Nightly\]/,/^$/c\### [Latest Build Number of Kotatsu Nightly](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest)\n${COUNTER_LINKS}\n" README.md
 
-      - name: Commit and push changes
+      - name: Update Docs
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           if [[ -n $(git status -s) ]]; then
             git add README.md
-            git commit -m "Update build number counter to ${{ needs.build.outputs.new_tag }}"
+            git commit -m "Update build number to ${{ needs.build.outputs.new_tag }}"
             git push origin nightly
           else
-            echo "No changes to commit"
+            echo "Warn: No changes to commit!"
           fi
