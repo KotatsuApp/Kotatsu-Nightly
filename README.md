@@ -83,7 +83,7 @@ please head over to the [Weblate project page](https://hosted.weblate.org/engage
     <img src="https://contrib.rocks/image?repo=KotatsuApp/Kotatsu-parsers" alt="Kotatsu-parsers contributors" title="Kotatsu-parsers contributors" width="800"/>
 </a>
 
-<br/>
+<br/><br/>
 
 **📌 Pull requests are welcome, if you want: See [CONTRIBUTING.md](https://github.com/KotatsuApp/Kotatsu/blob/devel/CONTRIBUTING.md) for the guidelines.**
 
