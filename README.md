@@ -19,7 +19,7 @@
 
 </div>
 
-### [Latest Version of Kotatsu Nightly](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest)
+### [Latest Build Number of Kotatsu Nightly](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest)
 [![Download](https://rule34.xxx/counter/2.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/0.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/2.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/4.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/1.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/1.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/2.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/7.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) 
 
 ### Download
