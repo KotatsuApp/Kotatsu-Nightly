@@ -75,8 +75,7 @@ please head over to the [Weblate project page](https://hosted.weblate.org/engage
     <img src="https://contrib.rocks/image?repo=KotatsuApp/Kotatsu" alt="Kotatsu contributors" title="Kotatsu contributors" width="800"/>
 </a>
 
-<br/>
-
+<br/><br/>
 
 **And thanks also to everyone who contributed to the Kotatsu-parsers!**
 
