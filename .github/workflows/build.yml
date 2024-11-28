@@ -98,3 +98,30 @@ jobs:
             ${{ steps.changelog.outputs.content }}
           files: ${{ env.SIGNED_APK }}
           prerelease: false
+
+      - name: Update Documents and Done!
+        run: |
+          git fetch origin nightly
+          git checkout nightly
+          
+          VERSION="${{ steps.tagger.outputs.new_tag }}"
+          
+          NUMBERS=()
+          for (( i=0; i<${#VERSION}; i++ )); do
+            NUMBERS+=("${VERSION:$i:1}")
+          done
+          
+          README_CONTENT=$(cat README.md)
+          
+          COUNTER_SECTION="### [Latest Version of Kotatsu Nightly](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest)\n"
+          for num in "${NUMBERS[@]}"; do
+            COUNTER_SECTION+="[![Download](https://rule34.xxx/counter/$num.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) "
+          done
+          
+          sed -i "/### \[Latest Version of Kotatsu Nightly\]/,/\[Download\]/c\\$COUNTER_SECTION" README.md
+          
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m "Update build number to $VERSION"
+          git push origin nightly
