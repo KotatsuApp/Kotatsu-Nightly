@@ -26,6 +26,8 @@ jobs:
     needs: check
     if: needs.check.outputs.should_build == 'true'
     runs-on: ubuntu-latest
+    outputs:
+      new_tag: ${{ steps.tagger.outputs.new_tag }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -99,28 +101,37 @@ jobs:
           files: ${{ env.SIGNED_APK }}
           prerelease: false
 
-      - name: Cleanup working directory
-        run: |
-          git clean -fdx
-          git reset --hard
-          git fetch origin nightly
-          git checkout nightly
+  update:
+    needs: build
+    if: needs.check.outputs.should_build == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: nightly
+          fetch-depth: 0
 
-      - name: Update documents
+      - name: Update build number
         run: |
-          VERSION_NUMBER="${{ steps.tagger.outputs.new_tag }}"
+          VERSION_NUMBER="${{ needs.build.outputs.new_tag }}"
           COUNTER_LINKS=""
           for (( i=0; i<${#VERSION_NUMBER}; i++ )); do
             DIGIT="${VERSION_NUMBER:$i:1}"
             COUNTER_LINKS+="[![Download](https://rule34.xxx/counter/$DIGIT.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) "
           done
           
-          sed -i "/### \[Latest Version of Kotatsu Nightly\]/,/^$/c\### [Latest Version of Kotatsu Nightly](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest)\n${COUNTER_LINKS}\n" README.md
+          sed -i "/### \[Latest Build Number of Kotatsu Nightly\]/,/^$/c\### [Latest Build Number of Kotatsu Nightly](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest)\n${COUNTER_LINKS}\n" README.md
 
       - name: Commit and push changes
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add README.md
-          git commit -m "Update version counter to ${{ steps.tagger.outputs.new_tag }}"
-          git push origin nightly
+          if [[ -n $(git status -s) ]]; then
+            git add README.md
+            git commit -m "Update build number counter to ${{ needs.build.outputs.new_tag }}"
+            git push origin nightly
+          else
+            echo "No changes to commit"
+          fi
