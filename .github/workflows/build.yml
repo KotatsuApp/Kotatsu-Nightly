@@ -54,7 +54,7 @@ jobs:
       - name: Grant permissions
         run: chmod a+x gradlew
 
-      - name: Generate version name
+      - name: Generate build number
         id: tagger
         run: |
           echo "new_tag=$(date +'%Y%m%d')" >> $GITHUB_OUTPUT
@@ -65,7 +65,7 @@ jobs:
           ./gradlew assembleNightly
           -DparsersVersionOverride=$(curl -s https://api.github.com/repos/kotatsuapp/kotatsu-parsers/commits/master -H "Accept: application/vnd.github.sha" | cut -c -10)
 
-      - name: Sign APK
+      - name: Sign Nightly APK
         uses: ilharp/sign-android-release@v1
         id: sign_app
         with:
@@ -81,7 +81,7 @@ jobs:
           mv ${{steps.sign_app.outputs.signedFile}} app/build/outputs/apk/nightly/release.apk
           echo "SIGNED_APK=app/build/outputs/apk/nightly/release.apk" >> $GITHUB_ENV
 
-      - name: CHANGELOG ???
+      - name: Get latest changes
         id: changelog
         run: |
           CHANGELOG=$(cat CHANGELOG.txt)
@@ -89,7 +89,7 @@ jobs:
           echo "$CHANGELOG" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Create Release
+      - name: Create Release and Upload
         uses: softprops/action-gh-release@v2
         with:
           tag_name: nightly-${{ steps.tagger.outputs.new_tag }}
@@ -130,8 +130,8 @@ jobs:
           git config --local user.name "github-actions[bot]"
           if [[ -n $(git status -s) ]]; then
             git add README.md
-            git commit -m "Update build number to ${{ needs.build.outputs.new_tag }}"
+            git commit -m "Bump build number to ${{ needs.build.outputs.new_tag }}"
             git push origin nightly
           else
-            echo "Warn: No changes to commit!"
+            echo "No changes to push!"
           fi
