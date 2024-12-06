@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-22.04
     outputs:
       should_build: ${{ steps.check-updates.outputs.has_changes }}
-      parsers_version: ${{ steps.get-parser-version.outputs.version }}
     steps:
       - id: check-updates
         run: |
@@ -23,17 +22,10 @@ jobs:
             echo "has_changes=false" >> $GITHUB_OUTPUT
           fi
 
-      - id: get-parser-version
-        run: |
-          version=$(curl -s https://api.github.com/repos/kotatsuapp/kotatsu-parsers/commits/master -H "Accept: application/vnd.github.sha" | cut -c -10)
-          echo "version=$version" >> $GITHUB_OUTPUT
-
   build:
     needs: check
     # if: needs.check.outputs.should_build == 'true'
     runs-on: ubuntu-22.04
-    container:
-      image: thyrlian/android-sdk:latest
     outputs:
       new_tag: ${{ steps.tagger.outputs.new_tag }}
     steps:
@@ -41,8 +33,17 @@ jobs:
         with:
           ref: base
 
-      - name: Auto-config before Pull upstream
-        run: git config --global --add safe.directory /__w/Kotatsu-nightly/Kotatsu-nightly
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          android_sdk_version: '35.0.0'
+          android_build_tools_version: '35.0.0'
 
       - name: Pull upstream
         run: |
@@ -62,7 +63,7 @@ jobs:
       - name: "Build Nightly APK"
         run: >-
           ./gradlew assembleNightly
-          -DparsersVersionOverride=${{ needs.check.outputs.parsers_version }}
+          -DparsersVersionOverride=$(curl -s https://api.github.com/repos/kotatsuapp/kotatsu-parsers/commits/master -H "Accept: application/vnd.github.sha" | cut -c -10)
 
       - name: Sign Nightly APK
         uses: ilharp/sign-android-release@v1
