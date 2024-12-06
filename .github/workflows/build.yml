@@ -26,24 +26,14 @@ jobs:
     needs: check
     # if: needs.check.outputs.should_build == 'true'
     runs-on: ubuntu-22.04
+    container:
+      image: thyrlian/android-sdk:latest
     outputs:
       new_tag: ${{ steps.tagger.outputs.new_tag }}
     steps:
       - uses: actions/checkout@v3
         with:
           ref: base
-
-      - uses: actions/setup-java@v3
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-          cache: 'gradle'
-
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-        with:
-          android_sdk_version: '34.0.0'
-          android_build_tools_version: '34.0.0'
 
       - name: Pull upstream
         run: |
