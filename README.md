@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://kotatsu.app">
-    <img src="./.github/icon.png" alt="Kotatsu Logo" title="Kotatsu" width="150"/>
+    <img src="./.github/assets/vtuber.png" alt="Kotatsu Logo" title="Kotatsu" width="600"/>
 </a>
 
 # [Kotatsu Nightly](#)
