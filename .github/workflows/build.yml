@@ -24,7 +24,7 @@ jobs:
 
   build:
     needs: check
-    # if: needs.check.outputs.should_build == 'true'
+    if: needs.check.outputs.should_build == 'true'
     runs-on: ubuntu-22.04
     outputs:
       new_tag: ${{ steps.tagger.outputs.new_tag }}
