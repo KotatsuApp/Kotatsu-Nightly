@@ -35,6 +35,9 @@ jobs:
         with:
           ref: base
 
+      - name: Auto-config before Pull upstream
+        run: git config --global --add safe.directory /__w/Kotatsu-nightly/Kotatsu-nightly
+
       - name: Pull upstream
         run: |
           git remote add upstream https://github.com/KotatsuApp/Kotatsu-Nightly.git
