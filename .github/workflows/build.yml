@@ -33,7 +33,7 @@ jobs:
         with:
           ref: base
 
-      - uses: actions/setup-java@v4
+      - uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
           java-version: '17'
@@ -42,8 +42,8 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
         with:
-          android_sdk_version: '35.0.0'
-          android_build_tools_version: '35.0.0'
+          android_sdk_version: '34.0.0'
+          android_build_tools_version: '34.0.0'
 
       - name: Pull upstream
         run: |
