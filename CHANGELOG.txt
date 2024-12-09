@@ -1,0 +1,8 @@
+**App update:**
+
+- UI (User interface) updates: Details
+- Branch selection in chapters list
+
+**Parsers update:**
+
+- Nothing changed...
