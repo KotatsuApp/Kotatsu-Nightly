@@ -1,9 +1,13 @@
-**App update:**
+**(old) App update:**
 
 - UI (User interface) updates: Details
 - Branch selection in chapters list
+
+**(new) App update:**
+
 - Update translations: Vietnamese, French, Chinese (Simplified Han script)
 
 **Parsers update:**
 
 - [YuriNeko] Fix "File not found" errors
+- [DocTruyen3Q] Fix missing images error
