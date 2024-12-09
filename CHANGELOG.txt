@@ -2,6 +2,7 @@
 
 - UI (User interface) updates: Details
 - Branch selection in chapters list
+- Update translations: Vietnamese, French, Chinese (Simplified Han script)
 
 **Parsers update:**
 
