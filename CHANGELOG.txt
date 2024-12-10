@@ -2,6 +2,7 @@
 
 - Error handling fixes
 - Update translations: Arabic, Chinese (Simplified Han script)
+- Update translation files (Base)
 
 **Parsers update:**
 
