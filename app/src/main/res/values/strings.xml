@@ -770,4 +770,7 @@
 	<string name="email">Email</string>
 	<string name="captcha_required_message">This source requires solving a captcha to continue</string>
 	<string name="error_connection_reset">Connection reset by remote host</string>
+	<string name="author">Author</string>
+	<string name="rating">Rating</string>
+	<string name="source">Source</string>
 </resources>
