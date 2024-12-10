@@ -1,13 +1,9 @@
-**(old) App update:**
+**App update:**
 
-- UI (User interface) updates: Details
-- Branch selection in chapters list
-
-**(new) App update:**
-
-- Update translations: Vietnamese, French, Chinese (Simplified Han script)
+- Error handling fixes
+- Update translations: Arabic, Chinese (Simplified Han script)
+- Update translation files (Base)
 
 **Parsers update:**
 
-- [YuriNeko] Fix "File not found" errors
-- [DocTruyen3Q] Fix missing images error
+- [ComicExtra] Remake parser
