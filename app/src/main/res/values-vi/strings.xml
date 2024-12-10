@@ -756,4 +756,5 @@
     <string name="author">Tác giả</string>
     <string name="rating">Đánh giá</string>
     <string name="source">Nguồn</string>
+    <string name="error_connection_reset">Kết nối đã được đặt lại bởi máy chủ</string>
 </resources>

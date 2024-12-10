@@ -1,7 +1,7 @@
 **App update:**
 
 - Error handling fixes
-- Update translations: Arabic, Chinese (Simplified Han script)
+- Update translations: Vietnamese, Arabic, Chinese (Simplified Han script)
 - Update translation files (Base)
 
 **Parsers update:**
