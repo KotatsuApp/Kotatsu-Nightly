@@ -1,9 +1,9 @@
 **App update:**
 
-- Error handling fixes
-- Update translations: Vietnamese, Arabic, Chinese (Simplified Han script)
+- Details activity improvements
+- Update translations: Vietnamese
 - Update translation files (Base)
 
 **Parsers update:**
 
-- [ComicExtra] Remake parser
+- Nothing changed...
