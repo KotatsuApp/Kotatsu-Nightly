@@ -1,7 +1,7 @@
 **App update:**
 
 - Details activity improvements
-- Update translations: Vietnamese
+- Update translations: Vietnamese, Turkish, French
 - Update translation files (Base)
 
 **Parsers update:**
