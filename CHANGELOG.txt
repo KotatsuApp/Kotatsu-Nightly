@@ -1,9 +1,18 @@
 **App update:**
 
-- Details activity improvements
-- Update translations: Vietnamese, Turkish, French
-- Update translation files (Base)
+- Nothing changed...
 
 **Parsers update:**
 
-- Nothing changed...
+- [DexHentai + Manhwa18] Fix "Content not found or removed" errors
+- [MangaTime] Broken fixes
+- [Kiryuu] Fix url errors
+- [Flamecomics] Reverse chapters fix
+- [SadScans] Fix "Cannot find .summary" errors
+- [Komiktap] Fix missing images error
+- [Birdtoon] Fix missing chapters list
+- [KomikCast] Fix chain validation failed errors
+- [AnimeH] Fix value errors
+- [SussyScan] Fixes
+- [ComicExtra] Fixes
+- Changed sources domain: KomikCast, CosmicScans, Kiryuu, Sussyscan,...
