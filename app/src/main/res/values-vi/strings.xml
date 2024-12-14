@@ -759,4 +759,10 @@
     <string name="translation">Bản dịch</string>
     <string name="incognito">Ẩn danh</string>
     <string name="show_slider">Hiện thanh trượt</string>
+	<string name="backup_tg_check">Kiểm tra API</string>
+	<string name="backup_tg_echo">Tình trạng: Đang hoạt động tốt!</string>
+	<string name="backup_tg_id_not_set">Tình trạng: Chưa thiết lập Chat ID của Telegram</string>
+	<string name="telegram_chat_id">Chat ID của Telegram</string>
+	<string name="open_telegram_bot">Mở Bot Telegram</string>
+	<string name="error_connection_reset">Kết nối đã được đặt lại bởi máy chủ</string>
 </resources>
