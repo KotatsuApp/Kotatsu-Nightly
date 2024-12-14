@@ -756,8 +756,7 @@
     <string name="author">Tác giả</string>
     <string name="rating">Đánh giá</string>
     <string name="source">Nguồn</string>
-    <string name="error_connection_reset">Kết nối đã được đặt lại bởi máy chủ</string>
     <string name="translation">Bản dịch</string>
+    <string name="incognito">Ẩn danh</string>
     <string name="show_slider">Hiện thanh trượt</string>
-	<string name="incognito">Ẩn danh</string>
 </resources>

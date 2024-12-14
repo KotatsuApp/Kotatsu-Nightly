@@ -489,6 +489,9 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		get() = prefs.getString(KEY_BACKUP_PERIODICAL_OUTPUT, null)?.toUriOrNull()
 		set(value) = prefs.edit { putString(KEY_BACKUP_PERIODICAL_OUTPUT, value?.toString()) }
 
+	val backupTelegramChatId: String?
+		get() = prefs.getString(KEY_BACKUP_TG_CHAT, null)
+
 	val isReadingTimeEstimationEnabled: Boolean
 		get() = prefs.getBoolean(KEY_READING_TIME, true)
 
@@ -716,6 +719,7 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		const val KEY_SEARCH_SUGGESTION_TYPES = "search_suggest_types"
 		const val KEY_SOURCES_VERSION = "sources_version"
 		const val KEY_QUICK_FILTER = "quick_filter"
+		const val KEY_BACKUP_TG_CHAT = "telegram_chat_id"
 
 		// keys for non-persistent preferences
 		const val KEY_APP_VERSION = "app_version"

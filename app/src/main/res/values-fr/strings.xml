@@ -4,12 +4,12 @@
     <string name="tracker_warning">Certains appareils ont un comportement différent du système, ce qui peut interrompre les tâches d\'arrière-plan.</string>
     <string name="backup_saved">Sauvegarde enregistrée</string>
     <string name="welcome">Bienvenue</string>
-    <string name="text_clear_search_history_prompt">Supprimer définitivement toutes les requêtes de recherche récentes \?</string>
+    <string name="text_clear_search_history_prompt">Supprimer définitivement toutes les requêtes de recherche récentes \?</string>
     <string name="password_length_hint">Le mot de passe doit comporter 4 caractères ou plus</string>
     <string name="confirm">Confirmer</string>
     <string name="protect_application_subtitle">Entrez un mot de passe pour démarrer l\'application avec</string>
     <string name="next">Suivant</string>
-    <string name="default_s">Par défaut : %s</string>
+    <string name="default_s">Par défaut : %s</string>
     <string name="auth_required">Connectez-vous pour voir ce contenu</string>
     <string name="sign_in">Se connecter</string>
     <string name="reverse">Inverser</string>
@@ -63,8 +63,8 @@
     <string name="rotate_screen">Faire pivoter l\'écran</string>
     <string name="updates_feed_cleared">Effacé</string>
     <string name="clear_updates_feed">Effacer le flux des mises à jour</string>
-    <string name="size_s">Taille : %s</string>
-    <string name="new_version_s">Nouvelle version : %s</string>
+    <string name="size_s">Taille : %s</string>
+    <string name="new_version_s">Nouvelle version : %s</string>
     <string name="search_results">Résultats de la recherche</string>
     <string name="text_feed_holder">Les nouveaux chapitres de ce que vous lisez sont affichés ici</string>
     <string name="updates">Mises à jour</string>
@@ -81,7 +81,7 @@
     <string name="manga_shelf">Étagère</string>
     <string name="text_local_holder_secondary">Enregistrez quelque chose à partir d\'un catalogue en ligne ou importez-le à partir d\'un fichier.</string>
     <string name="text_local_holder_primary">Sauvegardez d\'abord quelque chose</string>
-    <string name="text_history_holder_secondary">Trouver quoi lire dans la section « Explorer »</string>
+    <string name="text_history_holder_secondary">Trouver quoi lire dans la section « Explorer »</string>
     <string name="text_history_holder_primary">Ce que vous lisez sera affiché ici</string>
     <string name="text_search_holder_secondary">Essayez de reformuler la requête.</string>
     <string name="text_empty_holder_primary">C\'est un peu vide ici…</string>
@@ -107,7 +107,7 @@
     <string name="_continue">Continuer</string>
     <string name="switch_pages">Changer de pages</string>
     <string name="reader_settings">Paramètres du lecteur</string>
-    <string name="text_delete_local_manga">Supprimer « %s » de l\'appareil de façon permanente ?</string>
+    <string name="text_delete_local_manga">Supprimer « %s » de l\'appareil de façon permanente ?</string>
     <string name="delete_manga">Supprimer le manga</string>
     <string name="search_on_s">Rechercher sur %s</string>
     <string name="grid_size">Taille de la grille</string>
@@ -124,7 +124,7 @@
     <string name="share_image">Partager l\'image</string>
     <string name="page_saved">Page sauvegardée</string>
     <string name="save_page">Sauvegarder la page</string>
-    <string name="_s_deleted_from_local_storage">« %s » supprimé du stockage local</string>
+    <string name="_s_deleted_from_local_storage">« %s » supprimé du stockage local</string>
     <string name="remove">Retirer</string>
     <string name="clear">Effacer</string>
     <string name="pages">Pages</string>
@@ -216,7 +216,7 @@
     <string name="suggestions_updating">Mise à jour des suggestions</string>
     <string name="suggestions_excluded_genres">Exclure des genres</string>
     <string name="suggestions_excluded_genres_summary">Spécifiez les genres que vous ne voulez pas voir apparaître dans les suggestions</string>
-    <string name="text_delete_local_manga_batch">Supprimer définitivement les éléments sélectionnés de l\'appareil \?</string>
+    <string name="text_delete_local_manga_batch">Supprimer définitivement les éléments sélectionnés de l\'appareil \?</string>
     <string name="removal_completed">Suppression terminée</string>
     <string name="download_slowdown">Ralentissement du téléchargement</string>
     <string name="download_slowdown_summary">Permet d\'éviter le blocage de votre adresse IP</string>
@@ -313,7 +313,7 @@
     <string name="import_completed">Importation terminée</string>
     <string name="import_completed_hint">Vous pouvez supprimer le fichier original du stockage pour gagner de l\'espace</string>
     <string name="import_will_start_soon">L\'importation va bientôt commencer</string>
-    <string name="text_unsaved_changes_prompt">Sauvegarde ou abandon des modifications non sauvegardées \?</string>
+    <string name="text_unsaved_changes_prompt">Sauvegarde ou abandon des modifications non sauvegardées \?</string>
     <string name="discard">Abandonner</string>
     <string name="history_shortcuts_summary">Rendre les mangas récents disponibles en appuyant longuement sur l\'icône de l\'application</string>
     <string name="reader_control_ltr_summary">Ne pas ajuster la direction de la page au mode lecteur, par ex. en appuyant sur la bonne touche, passe toujours à la page suivante. Cette option n\'affecte que les périphériques d\'entrée matérielle</string>
@@ -384,14 +384,14 @@
     <string name="suggestions_notifications_summary">Notifications parfois affichées avec des mangas suggérés</string>
     <string name="cancel_all_downloads_confirm">Tous les téléchargements actifs seront annulés, les données partiellement téléchargées seront perdues</string>
     <string name="downloads_paused">Les téléchargements ont été interrompus</string>
-    <string name="suggestion_manga">Suggestion : %s</string>
+    <string name="suggestion_manga">Suggestion : %s</string>
     <string name="more">Plus</string>
     <string name="text_downloads_list_holder">Vous n\'avez pas de téléchargements</string>
     <string name="downloads_resumed">Les téléchargements ont repris</string>
     <string name="downloads_removed">Les téléchargements ont été supprimés</string>
     <string name="downloads_cancelled">Les téléchargements ont été annulés</string>
-    <string name="suggestions_enable_prompt">Voulez-vous recevoir des suggestions de mangas personnalisées \?</string>
-    <string name="web_view_unavailable">WebView non disponible : vérifier si le fournisseur WebView est installé</string>
+    <string name="suggestions_enable_prompt">Voulez-vous recevoir des suggestions de mangas personnalisées \?</string>
+    <string name="web_view_unavailable">WebView non disponible : vérifier si le fournisseur WebView est installé</string>
     <string name="clear_network_cache">Effacer le cache réseau</string>
     <string name="type">Taper</string>
     <string name="address">Adresse</string>
@@ -499,9 +499,9 @@
     <string name="keep_screen_on_summary">Ne pas désactiver l\'écran pendant que vous lisez des mangas</string>
     <string name="no_manga_sources_catalog_text">Il n\'y a pas de sources disponibles dans cette section, ou tout cela aurait pu être ajouté.
 \nRestez à l\'écoute</string>
-    <string name="available_d">Disponible : %1$d</string>
+    <string name="available_d">Disponible : %1$d</string>
     <string name="state">État</string>
-    <string name="last_successful_backup">Dernière sauvegarde réussie : %s</string>
+    <string name="last_successful_backup">Dernière sauvegarde réussie : %s</string>
     <string name="state_paused">En pause</string>
     <string name="backups_output_directory">Sauvegardes répertoire de sortie</string>
     <string name="suggest_new_sources_summary">Prompt pour permettre des sources nouvellement ajoutées après la mise à jour de l\'application</string>
@@ -525,7 +525,7 @@
     <string name="backup_date_">Date de sauvegarde : %s</string>
     <string name="by_name_reverse">Nom inversé</string>
     <string name="mark_as_completed">Marquer comme terminé</string>
-    <string name="mark_as_completed_prompt">Marquer le manga sélectionné comme terminé ?\n\nAttention : la progression actuelle sera perdue.</string>
+    <string name="mark_as_completed_prompt">Marquer le manga sélectionné comme terminé ?\n\nAttention : la progression actuelle sera perdue.</string>
     <string name="incognito_mode_hint">Votre progression de lecture ne sera pas sauvegardée</string>
     <string name="last_read">Dernier lu</string>
     <string name="vertical">Vertical</string>
@@ -586,7 +586,7 @@
     <string name="all_time">Tous les temps</string>
     <string name="day">Jour</string>
     <string name="empty_stats_text">Il n\'y a pas de statistiques pour la période sélectionné</string>
-    <string name="pages_read_s">Pages lues : %s</string>
+    <string name="pages_read_s">Pages lues : %s</string>
     <string name="alternatives">Alternatives</string>
     <string name="migrate">Migrer</string>
     <string name="migrate_confirmation">Le manga \"%1$s\" de \"%2$s\" sera remplacé par \"%3$s\" de \"%4$s\" dans votre historique et vos favoris (si présent)</string>
@@ -689,22 +689,22 @@
     <string name="source_unpinned">Source désépinglée</string>
     <string name="unpin">Désépingler</string>
     <string name="source_pinned">Source épinglée</string>
-    <string name="error_image_format">Format d\'image non pris en charge : %s</string>
+    <string name="error_image_format">Format d\'image non pris en charge : %s</string>
     <string name="downloads_background">Téléchargements en arrière-plan</string>
     <string name="download_new_chapters">Télécharger de nouveaux chapitres</string>
     <string name="manga_with_downloaded_chapters">Manga avec chapitres téléchargés</string>
     <string name="fixing_manga">Réparation du manga</string>
     <string name="fixed">Correction réussie</string>
     <string name="manga_fix_prompt">Cette fonction trouvera d\'autres sources pour le manga sélectionné. La tâche prendra du temps et se déroulera en arrière-plan</string>
-    <string name="no_fix_required">Pas de correction requise pour « %s »</string>
-    <string name="no_alternatives_found">Aucune alternative trouvée pour « %s »</string>
-    <string name="manga_replaced">Manga « %1$s » (%2$s) remplacé par « %3$s » (%4$s)</string>
+    <string name="no_fix_required">Pas de correction requise pour « %s »</string>
+    <string name="no_alternatives_found">Aucune alternative trouvée pour « %s »</string>
+    <string name="manga_replaced">Manga « %1$s » (%2$s) remplacé par « %3$s » (%4$s)</string>
     <string name="external_source">Externe/module d\'extension</string>
     <string name="start_download">Commencer à télécharger</string>
     <string name="save_manga_confirm">Enregistrer le manga sélectionné ? Ceci peut consommer des données et de l\'espace disque</string>
     <string name="save_manga">Enregistrer le manga</string>
-    <string name="seconds_short">%d s</string>
-    <string name="minutes_seconds_short">%1$d min %2$d s</string>
+    <string name="seconds_short">%d s</string>
+    <string name="minutes_seconds_short">%1$d min %2$d s</string>
     <string name="recent_sources">Sources récentes</string>
     <string name="invalid_proxy_configuration">Configuration par proxy invalide</string>
     <string name="show_quick_filters">Afficher les filtres rapides</string>
@@ -737,9 +737,9 @@
     <string name="allow_always">Toujours autoriser</string>
     <string name="allow_once">Autoriser une fois</string>
     <string name="ask_every_time">Demander à chaque fois</string>
-    <string name="plugin_incompatible_with_cause">Erreur du module d\'extension : %s\n- Assurez-vous que vous utilisez la dernière version du module d\'extension et de Kotatsu</string>
+    <string name="plugin_incompatible_with_cause">Erreur du module d\'extension : %s\n- Assurez-vous que vous utilisez la dernière version du module d\'extension et de Kotatsu</string>
     <string name="content_type_image_set">Collection d\'images</string>
-    <string name="error_not_image">Format invalide : une image était attendue mais a reçu %s</string>
+    <string name="error_not_image">Format invalide : une image était attendue mais a reçu %s</string>
     <string name="access_denied_403">Accès refusé (403)</string>
     <string name="max_backups_count">Nombre maximal de sauvegardes</string>
     <string name="sfw">Contenu non explicite</string>
@@ -752,4 +752,5 @@
     <string name="captcha_required_message">Cette source nécessite la résolution d\'un captcha pour continuer</string>
     <string name="author">Auteur</string>
     <string name="source">Source</string>
+    <string name="translation">Traduction</string>
 </resources>

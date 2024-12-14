@@ -757,4 +757,6 @@
     <string name="rating">评分</string>
     <string name="source">来源</string>
     <string name="translation">翻译</string>
+    <string name="incognito">无痕</string>
+    <string name="show_slider">显示滑块</string>
 </resources>

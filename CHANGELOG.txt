@@ -1,21 +1,11 @@
 **App update:**
 
-- UI (User interface) updates: Reader
+- Add Telegram backup feature
+- UI (User interface) improvements + Fixes: Reader
 - Update dependencies (parsers)
 - Update translation files (Base)
-- Update translations: Vietnamese, Turkish, French, Serbian,...
+- Update translations: Vietnamese, Filipino, German, Serbian,...
 
 **Parsers update:**
 
-- [DexHentai + Manhwa18] Fix "Content not found or removed" errors
-- [MangaTime] Broken fixes
-- [Kiryuu] Fix url errors
-- [Flamecomics] Reverse chapters fix
-- [SadScans] Fix "Cannot find .summary" errors
-- [Komiktap] Fix missing images error
-- [Birdtoon] Fix missing chapters list
-- [KomikCast] Fix chain validation failed errors
-- [AnimeH] Fix value errors
-- [SussyScan] Fixes
-- [ComicExtra] Fixes
-- Changed sources domain: KomikCast, CosmicScans, Kiryuu, Sussyscan,...
+- Add new source: CManga

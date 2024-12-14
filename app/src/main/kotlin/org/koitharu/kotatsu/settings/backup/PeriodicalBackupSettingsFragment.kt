@@ -17,6 +17,7 @@ import kotlinx.coroutines.withContext
 import org.koitharu.kotatsu.R
 import org.koitharu.kotatsu.core.backup.BackupZipOutput.Companion.DIR_BACKUPS
 import org.koitharu.kotatsu.core.backup.ExternalBackupStorage
+import org.koitharu.kotatsu.core.backup.TelegramBackupUploader
 import org.koitharu.kotatsu.core.prefs.AppSettings
 import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
 import org.koitharu.kotatsu.core.util.ext.resolveFile
@@ -32,13 +33,20 @@ class PeriodicalBackupSettingsFragment : BasePreferenceFragment(R.string.periodi
 	@Inject
 	lateinit var backupStorage: ExternalBackupStorage
 
-	private val outputSelectCall = registerForActivityResult(
-		ActivityResultContracts.OpenDocumentTree(),
-		this,
-	)
+	@Inject
+	lateinit var telegramBackupUploader: TelegramBackupUploader
+
+	private val outputSelectCall = registerForActivityResult(ActivityResultContracts.OpenDocumentTree(), this)
 
 	override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
 		addPreferencesFromResource(R.xml.pref_backup_periodic)
+
+		val openTelegramBotPreference = findPreference<Preference>("open_telegram_chat")
+
+		openTelegramBotPreference?.setOnPreferenceClickListener {
+			telegramBackupUploader.openTelegramBot(it.context, "kotatsu_backup_bot")
+			true
+		}
 	}
 
 	override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -100,3 +108,4 @@ class PeriodicalBackupSettingsFragment : BasePreferenceFragment(R.string.periodi
 		return resolveFile(context)?.path ?: toString()
 	}
 }
+
