@@ -44,7 +44,7 @@ class PeriodicalBackupSettingsFragment : BasePreferenceFragment(R.string.periodi
 		val openTelegramBotPreference = findPreference<Preference>("open_telegram_chat")
 
 		openTelegramBotPreference?.setOnPreferenceClickListener {
-			telegramBackupUploader.openTelegramBot(it.context, "kotatsu_backup_bot")
+			telegramBackupUploader.openTelegramBot(it.context)
 			true
 		}
 	}

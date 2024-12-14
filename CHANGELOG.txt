@@ -1,6 +1,6 @@
 **App update:**
 
-- Add Telegram backup feature
+- Add Telegram backup feature (Experiment)
 - UI (User interface) improvements + Fixes: Reader
 - Update dependencies (parsers)
 - Update translation files (Base)
