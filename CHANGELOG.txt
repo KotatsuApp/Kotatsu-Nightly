@@ -2,6 +2,8 @@
 
 - UI (User interface) updates: Reader
 - Update dependencies (parsers)
+- Update translation files (Base)
+- Update translations: Vietnamese, Turkish, French, Serbian,...
 
 **Parsers update:**
 
