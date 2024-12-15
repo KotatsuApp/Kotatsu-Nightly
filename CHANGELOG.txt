@@ -1,11 +1,8 @@
 **App update:**
 
-- Add Telegram backup feature (Experiment)
-- UI (User interface) improvements + Fixes: Reader
-- Update dependencies (parsers)
+- Fixes for Telegram backup feature
 - Update translation files (Base)
-- Update translations: Vietnamese, Filipino, German, Serbian,...
 
 **Parsers update:**
 
-- Add new source: CManga
+- Nothing changed...
