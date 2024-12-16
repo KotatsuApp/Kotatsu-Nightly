@@ -1,7 +1,6 @@
 **App update:**
 
-- Fixes for Telegram backup feature
-- Update translation files (Base)
+- UI (User interface) updates: Favorite dialog
 
 **Parsers update:**
 
