@@ -1,7 +1,8 @@
 **App update:**
 
 - UI (User interface) updates: Favorite dialog
+- Refactor navigation
 
 **Parsers update:**
 
-- Nothing changed...
+- Update utils
