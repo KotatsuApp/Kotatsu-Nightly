@@ -30,6 +30,7 @@ import org.koitharu.kotatsu.parsers.model.SortOrder
 import org.koitharu.kotatsu.parsers.util.find
 import org.koitharu.kotatsu.parsers.util.mapNotNullToSet
 import org.koitharu.kotatsu.parsers.util.mapToSet
+import org.koitharu.kotatsu.parsers.util.nullIfEmpty
 import org.koitharu.kotatsu.reader.domain.ReaderColorFilter
 import java.io.File
 import java.net.Proxy
@@ -413,10 +414,10 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		get() = prefs.getString(KEY_PROXY_PORT, null)?.toIntOrNull() ?: 0
 
 	val proxyLogin: String?
-		get() = prefs.getString(KEY_PROXY_LOGIN, null)?.takeUnless { it.isEmpty() }
+		get() = prefs.getString(KEY_PROXY_LOGIN, null)?.nullIfEmpty()
 
 	val proxyPassword: String?
-		get() = prefs.getString(KEY_PROXY_PASSWORD, null)?.takeUnless { it.isEmpty() }
+		get() = prefs.getString(KEY_PROXY_PASSWORD, null)?.nullIfEmpty()
 
 	var localListOrder: SortOrder
 		get() = prefs.getEnumValue(KEY_LOCAL_LIST_ORDER, SortOrder.NEWEST)
@@ -493,7 +494,7 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		get() = prefs.getBoolean(KEY_BACKUP_TG_ENABLED, false)
 
 	val backupTelegramChatId: String?
-		get() = prefs.getString(KEY_BACKUP_TG_CHAT, null)?.takeUnless { it.isEmpty() }
+		get() = prefs.getString(KEY_BACKUP_TG_CHAT, null)?.nullIfEmpty()
 
 	val isReadingTimeEstimationEnabled: Boolean
 		get() = prefs.getBoolean(KEY_READING_TIME, true)
@@ -739,6 +740,7 @@ class AppSettings @Inject constructor(@ApplicationContext context: Context) {
 		const val KEY_HANDLE_LINKS = "handle_links"
 		const val KEY_BACKUP_TG_OPEN = "backup_periodic_tg_open"
 		const val KEY_BACKUP_TG_TEST = "backup_periodic_tg_test"
+		const val KEY_CLEAR_MANGA_DATA = "manga_data_clear"
 
 		// old keys are for migration only
 		private const val KEY_IMAGES_PROXY_OLD = "images_proxy"
