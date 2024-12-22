@@ -1,16 +1,8 @@
-**(delayed) App update:**
+**App update:**
 
-- New favorite dialog
-- Change / Use advanced bitmap decoder
-- Fixes cache chapters list
-- Add option to clear manga database
-- Advanced: Add "url" for NoDataReceivedException
+- Fix Telegram backups uploading
 - Update translation files (Base)
-- Update dependencies (parsers)
 
-**(delayed) Parsers update:**
+**Parsers update:**
 
-- Update utils
-- Fix Response.mimeType extension
-- [Grouple] Fix pages parsing
-- [KomikTap] Fix http pages
+- Nothing changed...
