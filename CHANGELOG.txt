@@ -1,9 +1,10 @@
 **App update:**
 
-- UI (User interface) updates: Reader
-- Update translation files (Base)
-- Update translations: Vietnamese, French, Arabic,...
+- Nothing changed...
 
 **Parsers update:**
 
-- [Grouple] Fixes
+- [NetTruyen] Fix reversed chapters list
+- [vi] Rename some sources
+- Add new source: MeHentaiVN
+- Changed sources domain: HentaiVN.plus, TruyenVn, LXManga, SayHentai
