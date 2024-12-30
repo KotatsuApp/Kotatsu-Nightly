@@ -1,10 +1,7 @@
 **App update:**
 
-- Nothing changed...
+- Fix NPE in Sync Settings
 
 **Parsers update:**
 
-- [NetTruyen] Fix reversed chapters list
-- [vi] Rename some sources
-- Add new source: MeHentaiVN
-- Changed sources domain: HentaiVN.plus, TruyenVn, LXManga, SayHentai
+- Nothing changed...
