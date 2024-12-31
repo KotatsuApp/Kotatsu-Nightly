@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://kotatsu.app">
-    <img src="./.github/assets/vtuber.png" alt="Kotatsu Logo" title="Kotatsu" width="600"/>
+    <img src="./.github/assets/vtuber.png" alt="Kotatsu Logo" title="Kotatsu" width="500"/>
 </a>
 
 # [Kotatsu Nightly](#)
@@ -93,7 +93,7 @@ please head over to the [Weblate project page](https://hosted.weblate.org/engage
     <img src="https://contrib.rocks/image?repo=KotatsuApp/Kotatsu" alt="Kotatsu contributors" title="Kotatsu contributors" width="800"/>
 </a>
 
-<br/>
+<br/><br/>
 
 **And thanks also to everyone who contributed to the Kotatsu-parsers!**
 
@@ -111,16 +111,14 @@ please head over to the [Weblate project page](https://hosted.weblate.org/engage
 
 <div align="left">
 
-You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications
-to or software including (via compiler) GPL-licensed code must also be made available under the GPL along with build &
-install instructions.
+You may copy, distribute and modify the software as long as you track changes/dates in source files. Any modifications to or software including (via compiler) GPL-licensed code must also be made available under the GPL along with build & install instructions.
+
 </div>
 
 ### DMCA disclaimer
 
 <div align="left">
 
-The developers of this application do not have any affiliation with the content available in the app.
-It collects content from sources that are freely available through any web browser
+The developers of this application do not have any affiliation with the content available in the app. It collects content from sources that are freely available through any web browser
 
 </div>
