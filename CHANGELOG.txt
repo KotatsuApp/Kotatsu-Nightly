@@ -1,7 +1,7 @@
 **App update:**
 
-- Fix NPE in Sync Settings
+- Nothing changed...
 
 **Parsers update:**
 
-- Nothing changed...
+- Changed sources domain: TruyenVn, CManga, Dưa Leo Truyện, YuriNeko, DocTruyen3Q, NetTruyen, TopTruyen
