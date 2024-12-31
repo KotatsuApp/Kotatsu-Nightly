@@ -1,7 +1,7 @@
 <div align="center">
 
 <a href="https://kotatsu.app">
-    <img src="./.github/assets/vtuber.png" alt="Kotatsu Logo" title="Kotatsu" width="500"/>
+    <img src="./.github/assets/vtuber.png" alt="Kotatsu Logo" title="Kotatsu" width="600"/>
 </a>
 
 # [Kotatsu Nightly](#)
@@ -10,7 +10,7 @@
 
 [![Sources count](https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2FKotatsuApp%2Fkotatsu-parsers%2Frefs%2Fheads%2Fmaster%2F.github%2Fsummary.yaml&query=total&label=manga%20sources&color=%23E9321C)](https://github.com/KotatsuApp/kotatsu-parsers) ![Android 5.0](https://img.shields.io/badge/android-5.0+-brightgreen) [![weblate](https://hosted.weblate.org/widgets/kotatsu/-/strings/svg-badge.svg)](https://hosted.weblate.org/engage/kotatsu/) [![Telegram](https://img.shields.io/badge/chat-telegram-60ACFF)](https://t.me/kotatsuapp) [![Discord](https://img.shields.io/discord/898363402467045416?color=5865f2&label=discord)](https://discord.gg/NNJ5RgVBC5) [![License](https://img.shields.io/github/license/KotatsuApp/Kotatsu)](https://github.com/KotatsuApp/Kotatsu/blob/devel/LICENSE)
 
-### 🚨 Disclaimer / Note 🚨
+## 🚨 Disclaimer / Note 🚨
 
 <div align="left">
 
@@ -23,7 +23,7 @@
 ### [Latest Build Number of Kotatsu Nightly](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest)
 [![Download](https://rule34.xxx/counter/2.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/0.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/2.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/4.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/1.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/2.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/3.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/0.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) 
 
-### Download
+## Download
 
 <div align="left">
 
@@ -36,7 +36,7 @@
 
 </div>
 
-### [Kotatsu Nightly](https://github.com/KotatsuApp/Kotatsu-nightly) Main Features
+## [Kotatsu Nightly](https://github.com/KotatsuApp/Kotatsu-nightly) Main Features
 
 <div align="left">
 
@@ -48,7 +48,7 @@
 
 </div>
 
-### [Kotatsu](https://github.com/KotatsuApp/Kotatsu) Main Features
+## [Kotatsu](https://github.com/KotatsuApp/Kotatsu) Main Features
 
 <div align="left">
 
@@ -65,7 +65,7 @@
 
 </div>
 
-### In-App Screenshots
+## In-App Screenshots
 
 | ![Mobile view](./.github/assets/screen.png) | ![Mobile view](./.github/assets/screen2.png)                           | ![Mobile view](./.github/assets/screen3.png) |
 |-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -74,7 +74,7 @@
 | ![Mobile view](./.github/assets/screen7.png) | ![Mobile view](./.github/assets/screen8.png) |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 
-### Localization
+## Localization
 
 <a href="https://hosted.weblate.org/engage/kotatsu/">
 <img src="https://hosted.weblate.org/widget/kotatsu/horizontal-auto.png" alt="Translation status" />
@@ -85,7 +85,7 @@
 📌 If you would like to help improve these or add new languages,
 please head over to the [Weblate project page](https://hosted.weblate.org/engage/kotatsu/)
 
-### Contributing
+## Contributing
 
 **Thank you to all the people who have contributed for Kotatsu!**
 
@@ -105,7 +105,7 @@ please head over to the [Weblate project page](https://hosted.weblate.org/engage
 
 **📌 Pull requests are welcome, if you want: See [CONTRIBUTING.md](https://github.com/KotatsuApp/Kotatsu/blob/devel/CONTRIBUTING.md) for the guidelines 📌**
 
-### License
+## License
 
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
@@ -115,7 +115,7 @@ You may copy, distribute and modify the software as long as you track changes/da
 
 </div>
 
-### DMCA disclaimer
+## DMCA disclaimer
 
 <div align="left">
 
