@@ -40,11 +40,11 @@
 
 <div align="left">
 
-* Latest manga sources update from [Kotatsu parsers library](https://github.com/KotatsuApp/Kotatsu-parsers).
-* Get almost all the features from Alpha / Beta / RC versions of [Kotatsu](https://github.com/KotatsuApp/Kotatsu) without any data loss.
-* Get the latest patches / bug fixes from Devs for [Kotatsu](https://github.com/KotatsuApp/Kotatsu) (with latest commits from [Master branch](https://github.com/KotatsuApp/Kotatsu/tree/master) & [Devel branch](https://github.com/KotatsuApp/Kotatsu/tree/devel)).
-* Get more frequent updates of Kotatsu, maintained and tested by [Developers / Contributors](https://github.com/KotatsuApp/Kotatsu/graphs/contributors).
+* Latest manga sources update from [Kotatsu parsers library](https://github.com/KotatsuApp/Kotatsu-parsers) (with latest commits)
+* Get almost all the features from Alpha / Beta / RC versions of [Kotatsu](https://github.com/KotatsuApp/Kotatsu) without any data loss
+* Get the latest patches / bug fixes from Devs for [Kotatsu](https://github.com/KotatsuApp/Kotatsu) (with latest commits from [Master branch](https://github.com/KotatsuApp/Kotatsu/tree/master) & [Devel branch](https://github.com/KotatsuApp/Kotatsu/tree/devel))
 * Get detailed information about new changes / fixes / updates between every Nightly builds (App / Parsers update) in [GitHub Release changelogs](https://github.com/KotatsuApp/kotatsu-nightly/releases/)
+* Get more frequent updates of Kotatsu, maintained and tested by [Developers / Contributors](https://github.com/KotatsuApp/Kotatsu/graphs/contributors)
 
 </div>
 
@@ -119,6 +119,6 @@ You may copy, distribute and modify the software as long as you track changes/da
 
 <div align="left">
 
-The developers of this application do not have any affiliation with the content available in the app. It collects content from sources that are freely available through any web browser
+The developers of this application do not have any affiliation with the content available in the app. It collects content from sources that are freely available through any web browser.
 
 </div>
