@@ -1,7 +1,10 @@
 **App update:**
 
-- Nothing changed...
+- UI (User interface) improvements + Fixes: Layout
+- Improvements: Skip non-existing local chapters
+- Advanced: Update dependencies (library + parsers), list badges
+- Fixes: Sync settings, build, details cover corners, settings search,...
 
 **Parsers update:**
 
-- Changed sources domain: TruyenVn, CManga, Dưa Leo Truyện, YuriNeko, DocTruyen3Q, NetTruyen, TopTruyen
+- Nothing changed...
