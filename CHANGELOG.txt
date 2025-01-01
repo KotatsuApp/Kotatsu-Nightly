@@ -1,9 +1,9 @@
 **App update:**
 
-- UI (User interface) improvements + Fixes: Layout
-- Improvements: Skip non-existing local chapters
-- Advanced: Update dependencies (library + parsers), list badges
-- Fixes: Sync settings, build, details cover corners, settings search,...
+- UI (User interface) improvements + Fixes: Layout,...
+- Improvements: Skip for non-existing local chapters
+- Fixes: Sync settings, details cover corners, search in settings,...
+- Advanced: Update dependencies (including: libraries + parsers), list badges,...
 
 **Parsers update:**
 
