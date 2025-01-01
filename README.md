@@ -41,10 +41,10 @@
 <div align="left">
 
 * Latest manga sources update from [Kotatsu parsers library](https://github.com/KotatsuApp/Kotatsu-parsers).
-* Get the latest patches / bug fixes from Devs for [Kotatsu](https://github.com/KotatsuApp/Kotatsu) (with [Devel branch](https://github.com/KotatsuApp/Kotatsu/tree/devel)).
 * Get almost all the features from Alpha / Beta / RC versions of [Kotatsu](https://github.com/KotatsuApp/Kotatsu) without any data loss.
+* Get the latest patches / bug fixes from Devs for [Kotatsu](https://github.com/KotatsuApp/Kotatsu) (with latest commits from [Master branch](https://github.com/KotatsuApp/Kotatsu/tree/master) & [Devel branch](https://github.com/KotatsuApp/Kotatsu/tree/devel)).
 * Get more frequent updates of Kotatsu, maintained and tested by [Developers / Contributors](https://github.com/KotatsuApp/Kotatsu/graphs/contributors).
-* Get detailed information about new changes / updates between every [Nightly builds](https://github.com/KotatsuApp/kotatsu-nightly/releases/) (App / Parsers update)
+* Get detailed information about new changes / fixes / updates between every Nightly builds (App / Parsers update) in [GitHub Release changelogs](https://github.com/KotatsuApp/kotatsu-nightly/releases/)
 
 </div>
 
@@ -56,8 +56,8 @@
 * Search manga by name, genres, and more filters
 * Reading history and bookmarks
 * Favorites organized by user-defined categories
-* Downloading manga and reading it offline. Third-party CBZ archives also supported
-* Tablet-optimized Material You UI
+* Downloading manga and reading it offline. Third-party CBZ archives also supported!
+* Tablet-optimized Material UI
 * Standard and Webtoon-optimized customizable reader
 * Notifications about new chapters with updates feed
 * Integration with manga tracking services: Shikimori, AniList, MyAnimeList, Kitsu
