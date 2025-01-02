@@ -40,9 +40,9 @@
 
 <div align="left">
 
-* Latest manga sources update from [Kotatsu parsers library](https://github.com/KotatsuApp/Kotatsu-parsers) (with latest commits)
+* Latest manga sources update from [Kotatsu parsers library](https://github.com/KotatsuApp/Kotatsu-parsers)
 * Get almost all the features from Alpha / Beta / RC versions of [Kotatsu](https://github.com/KotatsuApp/Kotatsu) without any data loss
-* Get the latest patches / bug fixes from Devs for [Kotatsu](https://github.com/KotatsuApp/Kotatsu) (with latest commits from [Master branch](https://github.com/KotatsuApp/Kotatsu/tree/master) & [Devel branch](https://github.com/KotatsuApp/Kotatsu/tree/devel))
+* Get the latest patches / bug fixes from Devs for [Kotatsu](https://github.com/KotatsuApp/Kotatsu) (with latest commits from [master](https://github.com/KotatsuApp/Kotatsu/tree/master) & [devel](https://github.com/KotatsuApp/Kotatsu/tree/devel) branch)
 * Get detailed information about new changes / fixes / updates between every Nightly builds (App / Parsers update) in [GitHub Release changelogs](https://github.com/KotatsuApp/kotatsu-nightly/releases/)
 * Get more frequent updates of Kotatsu, maintained and tested by [Developers / Contributors](https://github.com/KotatsuApp/Kotatsu/graphs/contributors)
 
@@ -61,7 +61,7 @@
 * Standard and Webtoon-optimized customizable reader
 * Notifications about new chapters with updates feed
 * Integration with manga tracking services: Shikimori, AniList, MyAnimeList, Kitsu
-* Password/fingerprint-protected access to the app
+* Password / fingerprint-protected access to the app
 
 </div>
 
