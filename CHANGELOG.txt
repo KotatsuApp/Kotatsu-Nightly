@@ -1,9 +1,7 @@
 **App update:**
 
-- Improvements: Add new option to enable all sources
-- Fixes: Menu, settings,...
-- Advanced: Update translation files (Base)
+- Nothing changed...
 
 **Parsers update:**
 
-- Nothing changed...
+- [CuuTruyen] Fixes
