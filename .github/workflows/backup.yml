@@ -19,33 +19,33 @@ jobs:
           java-version: '17'
           cache: 'gradle'
 
-      - name: Setup Android SDK
+      - name: Setup Android SDK 💻
         uses: android-actions/setup-android@v3
         with:
           android_sdk_version: '35.0.0'
           android_build_tools_version: '35.0.0'
 
-      - name: Pull upstream
+      - name: Pull upstream 🌏
         run: |
           git remote add upstream https://github.com/KotatsuApp/Kotatsu-Nightly.git
           git fetch upstream base
           git reset --hard upstream/base
 
-      - name: Grant permissions
+      - name: Grant permissions 💻
         run: chmod a+x gradlew
 
-      - name: Generate build number
+      - name: Generate build number 📆
         id: tagger
         run: |
           echo "new_tag=$(date +'%Y%m%d')" >> $GITHUB_OUTPUT
           echo "formatted_date=$(date +'%Y/%m/%d')" >> $GITHUB_OUTPUT
 
-      - name: "Build Nightly APK"
+      - name: Building new APK 💻
         run: >-
           ./gradlew assembleNightly
           -DparsersVersionOverride=$(curl -s https://api.github.com/repos/kotatsuapp/kotatsu-parsers/commits/master -H "Accept: application/vnd.github.sha" | cut -c -10)
 
-      - name: Sign Nightly APK
+      - name: Packaging new APK 💻
         uses: ilharp/sign-android-release@v1
         id: sign_app
         with:
@@ -56,12 +56,12 @@ jobs:
           keyPassword: ${{ secrets.ANDROID_KEY_PASSWORD }}
           buildToolsVersion: 35.0.0
 
-      - name: Prepare to Upload
+      - name: Prepare to Upload 🌏
         run: |
           mv ${{steps.sign_app.outputs.signedFile}} app/build/outputs/apk/nightly/release.apk
           echo "SIGNED_APK=app/build/outputs/apk/nightly/release.apk" >> $GITHUB_ENV
 
-      - name: Get latest changes
+      - name: Get latest changes 📑
         id: changelog
         run: |
           CHANGELOG=$(cat CHANGELOG.txt)
@@ -69,7 +69,7 @@ jobs:
           echo "$CHANGELOG" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-      - name: Create Release and Upload
+      - name: Create new GH Release + Uploading 🌏
         uses: softprops/action-gh-release@v2
         with:
           tag_name: nightly-${{ steps.tagger.outputs.new_tag }}
@@ -92,7 +92,7 @@ jobs:
           ref: nightly
           fetch-depth: 0
 
-      - name: Get Build Number
+      - name: Get Build Number 📆
         run: |
           VERSION_NUMBER="${{ needs.build.outputs.new_tag }}"
           COUNTER_LINKS=""
@@ -103,10 +103,10 @@ jobs:
           
           sed -i "/### \[Latest Build Number of Kotatsu Nightly\]/,/^$/c\### [Latest Build Number of Kotatsu Nightly](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest)\n${COUNTER_LINKS}\n" README.md
 
-      - name: Update Docs
+      - name: Update Docs + Commit 🌏
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "nvasya95@gmail.com"
+          git config --local user.name "Koitharu"
           if [[ -n $(git status -s) ]]; then
             git add README.md
             git commit -m "Bump build number to ${{ needs.build.outputs.new_tag }}"
