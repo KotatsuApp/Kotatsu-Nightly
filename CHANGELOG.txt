@@ -1,7 +1,7 @@
 **App update:**
 
-- Nothing changed...
+- Improvements: Emoji flags in details, mime-type handling, drawable and views state management,...
 
 **Parsers update:**
 
-- [CuuTruyen] Fixes
+- Nothing changed...
