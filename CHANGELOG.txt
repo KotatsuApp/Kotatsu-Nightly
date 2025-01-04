@@ -5,3 +5,5 @@
 **Parsers update:**
 
 - Nothing changed...
+
+*Note: Kotatsu Nightly N20250105 is not recommended by the Nightly contributors. If you have installed this version and want to return to the older version (N20250104), [click here](https://github.com/KotatsuApp/Kotatsu-nightly/releases/download/nightly-20250104/downgrade.apk) to download and install to avoid losing old data*
