@@ -101,38 +101,3 @@ jobs:
             ${{ steps.changelog.outputs.content }}
           files: ${{ env.SIGNED_APK }}
           prerelease: false
-
-  update:
-    needs: build
-    if: needs.check.outputs.should_build == 'true'
-    runs-on: ubuntu-22.04
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          ref: nightly
-          fetch-depth: 0
-
-      - name: Get Build Number 📆
-        run: |
-          VERSION_NUMBER="${{ needs.build.outputs.new_tag }}"
-          COUNTER_LINKS=""
-          for (( i=0; i<${#VERSION_NUMBER}; i++ )); do
-            DIGIT="${VERSION_NUMBER:$i:1}"
-            COUNTER_LINKS+="[![Download](https://rule34.xxx/counter/$DIGIT.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) "
-          done
-          
-          sed -i "/### \[Latest Build Number of Kotatsu Nightly\]/,/^$/c\### [Latest Build Number of Kotatsu Nightly](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest)\n${COUNTER_LINKS}\n" README.md
-
-      - name: Update Docs + Commit 🌏
-        run: |
-          git config --local user.email "nvasya95@gmail.com"
-          git config --local user.name "Koitharu"
-          if [[ -n $(git status -s) ]]; then
-            git add README.md
-            git commit -m "Bump build number to ${{ needs.build.outputs.new_tag }}"
-            git push origin nightly
-          else
-            echo "No changes to push!"
-          fi
