@@ -1,4 +1,4 @@
-# [Kotatsu Nightly](#)
+# Kotatsu Nightly
 
 [Kotatsu](https://github.com/KotatsuApp/Kotatsu) is a free and open-source manga reader for Android with built-in online content sources. This repository contains a **nightly builds** with latest changes from the [`devel`](https://github.com/KotatsuApp/Kotatsu/commits/devel/) branch.
 
