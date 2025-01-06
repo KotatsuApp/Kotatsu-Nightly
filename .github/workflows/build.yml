@@ -126,8 +126,8 @@ jobs:
 
       - name: Update Docs + Commit 🌏
         run: |
-          git config --local user.email "premieregirl26@gmail.com"
-          git config --local user.name "dragonx943"
+          git config --local user.email "dragonx943@users.noreply.github.com"
+          git config --local user.name "Draken"
           if [[ -n $(git status -s) ]]; then
             git add README.md
             git commit -m "Bump build number to ${{ needs.build.outputs.new_tag }}"
