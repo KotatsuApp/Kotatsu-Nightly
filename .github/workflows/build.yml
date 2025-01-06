@@ -101,3 +101,37 @@ jobs:
             ${{ steps.changelog.outputs.content }}
           files: ${{ env.SIGNED_APK }}
           prerelease: false
+
+  update:
+    needs: build
+    if: needs.check.outputs.should_build == 'true'
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: nightly
+          fetch-depth: 0
+
+      - name: Update Build Number 📆
+        run: |
+          VERSION_NUMBER="${{ needs.build.outputs.new_tag }}"
+          COUNTER_LINKS=""          
+          for (( i=0; i<${#VERSION_NUMBER}; i++ )); do
+            DIGIT="${VERSION_NUMBER:$i:1}"
+            COUNTER_LINKS+="[![Download](https://rule34.xxx/counter/$DIGIT.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) "
+          done
+          sed -i "/### <img src=\".\/.github\/app_icon.png\" alt=\"Kotatsu Logo\" width=\"16\" style=\"vertical-align: bottom;\"\/> Download <img src=\".\/.github\/app_icon.png\" alt=\"Kotatsu Logo\" width=\"16\" style=\"vertical-align: bottom;\"\/>/,/div>/c\### <img src=\".\/.github\/app_icon.png\" alt=\"Kotatsu Logo\" width=\"16\" style=\"vertical-align: bottom;\"\/> Download <img src=\".\/.github\/app_icon.png\" alt=\"Kotatsu Logo\" width=\"16\" style=\"vertical-align: bottom;\"\/>\n\n${COUNTER_LINKS}\n\n<div align=\"left\">\n\n* Nightly build can be downloaded from the [GitHub Releases](https://github.com/KotatsuApp/Kotatsu-Nightly/releases). Application has a built-in self-updating feature.\n* If you want to download a stable Kotatsu release please refer to the [main Kotatsu repository](https://github.com/KotatsuApp/Kotatsu?tab=readme-ov-file#download).\n\n</div>" README.md
+
+      - name: Update Docs + Commit 🌏
+        run: |
+          git config --local user.email "nvasya95@gmail.com"
+          git config --local user.name "Koitharu"
+          if [[ -n $(git status -s) ]]; then
+            git add README.md
+            git commit -m "Bump build number to ${{ needs.build.outputs.new_tag }}"
+            git push origin nightly
+          else
+            echo "No changes to push!"
+          fi
