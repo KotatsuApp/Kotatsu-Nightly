@@ -12,9 +12,9 @@
 
 ### <img src="./.github/app_icon.png" alt="Kotatsu Logo" width="16" style="vertical-align: bottom;"/> Download <img src="./.github/app_icon.png" alt="Kotatsu Logo" width="16" style="vertical-align: bottom;"/>
 
-[![Download](https://rule34.xxx/counter/2.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/0.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/2.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/5.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/0.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/1.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/0.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/5.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) 
+[![Download](https://rule34.xxx/counter/2.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/0.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/2.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/5.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/0.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/1.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/0.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) [![Download](https://rule34.xxx/counter/6.gif)](https://github.com/KotatsuApp/kotatsu-nightly/releases/latest) 
 
-<div align="left"> 
+<div align="left">
 
 * Nightly build can be downloaded from the [GitHub Releases](https://github.com/KotatsuApp/Kotatsu-Nightly/releases). Application has a built-in self-updating feature.
 * If you want to download a stable Kotatsu release please refer to the [main Kotatsu repository](https://github.com/KotatsuApp/Kotatsu?tab=readme-ov-file#download).
