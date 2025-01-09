@@ -1,6 +1,7 @@
 **App update:**
 
-- Fix: Drawables state
+- Fixes: App crashes, pages cache usage, local chapters deletion
+- Advanced: Skip description for ParcelableManga
 
 **Parsers update:**
 
