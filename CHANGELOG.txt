@@ -1,7 +1,9 @@
 **App update:**
 
-- Fixes: App crashes, pages cache usage, local chapters deletion
-- Advanced: Skip description for ParcelableManga
+- Fixes: App crashes, manga importing,...
+- Improvement: Local manga chapter names 
+- Update translations: Vietnamese, Serbian, Russian, Arabic, Italian,...
+- Advanced: Upgrade agp
 
 **Parsers update:**
 
