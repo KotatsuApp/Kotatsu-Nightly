@@ -1,7 +1,8 @@
 **App update:**
 
-- Nothing changed...
+- Fixes: Parsers, adjust fields nullability
+- Advanced: Made SyncAuthActivity exported
 
 **Parsers update:**
 
-- Advanced: Fix nullable strings usage, migrate models to data class and update Manga class
+- Advanced: Refactor parsers
