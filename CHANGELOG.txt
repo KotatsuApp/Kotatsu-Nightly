@@ -1,8 +1,7 @@
 **App update:**
 
-- Fixes: Parsers, adjust fields nullability
-- Advanced: Made SyncAuthActivity exported
+- Nothing changed...
 
 **Parsers update:**
 
-- Advanced: Refactor parsers
+- Fix: Absolute URL resolving
