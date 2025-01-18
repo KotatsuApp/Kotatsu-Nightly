@@ -1,7 +1,7 @@
 **App update:**
 
-- Nothing changed...
+- Advanced: Update dependencies
 
 **Parsers update:**
 
-- Fix: Absolute URL resolving
+- Nothing changed...
