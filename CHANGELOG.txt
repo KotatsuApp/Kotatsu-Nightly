@@ -1,7 +1,12 @@
 **App update:**
 
-- Advanced: Update dependencies
+- UI (User interface) improvements: Reader info bar
+- Improvement: Add MIUI detector, add support for nested cbz covers, closing Okio FileSystem
+- Fix + Adjust: Manga fields nullability for ParcelableManga, Libs import,...
+- Advanced: Update dependencies (libraries + parsers),...
+- Debugging (Nightly): Track services using LeakCanary, add option to disable LeakCanary
 
 **Parsers update:**
 
-- Nothing changed...
+- Advanced: Update utils
+- Update sources domain: Bato.To, MangaPark, CBHentai, HentaiVN.plus, CManga, LXManga,...
