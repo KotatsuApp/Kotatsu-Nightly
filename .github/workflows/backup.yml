@@ -21,9 +21,6 @@ jobs:
 
       - name: Setup Android SDK 💻
         uses: android-actions/setup-android@v3
-        with:
-          android_sdk_version: '35.0.0'
-          android_build_tools_version: '35.0.0'
 
       - name: Pull upstream 🌏
         run: |
