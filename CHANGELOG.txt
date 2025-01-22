@@ -1,7 +1,8 @@
 **App update:**
 
-- Fix: Local manga parsing
 - Remove feature: Telegram backup
+- Fix: Local manga parsing
+- Advanced: Update dependencies (parsers)
 
 **Parsers update:**
 
