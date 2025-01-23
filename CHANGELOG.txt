@@ -1,9 +1,7 @@
 **App update:**
 
-- Remove feature: Telegram backup
-- Fix: Local manga parsing
-- Advanced: Update dependencies (parsers)
+- Restore feature: Telegram backup
 
 **Parsers update:**
 
-- Advanced: Update json utils
+- Nothing changed...
