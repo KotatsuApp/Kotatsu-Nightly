@@ -1,7 +1,7 @@
 **App update:**
 
-- Restore feature: Telegram backup
+- Nothing changed...
 
 **Parsers update:**
 
-- Nothing changed...
+- Add new source: NetTruyenVie [vi]
