@@ -1,7 +1,7 @@
 **App update:**
 
-- Nothing changed...
+- Advanced: Update dependencies (parsers)
 
 **Parsers update:**
 
-- Add new source: NetTruyenVie [vi]
+- Nothing changed...
