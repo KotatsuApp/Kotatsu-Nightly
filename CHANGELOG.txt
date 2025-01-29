@@ -1,7 +1,7 @@
 **App update:**
 
-- Advanced: Update dependencies (parsers)
+- Nothing changed...
 
 **Parsers update:**
 
-- Nothing changed...
+- [YuriNeko] Fixes
