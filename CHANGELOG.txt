@@ -4,4 +4,4 @@
 
 **Parsers update:**
 
-- Nothing changed...
+- Add new source: TruyenTranh3Q [vi]
