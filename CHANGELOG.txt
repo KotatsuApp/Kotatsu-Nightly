@@ -1,7 +1,7 @@
 **App update:**
 
-- Nothing changed...
+- UI (User interface) fix: Details screen
 
 **Parsers update:**
 
-- [YuriNeko] Fixes
+- Nothing changed...
