@@ -1,7 +1,7 @@
 **App update:**
 
-- UI (User interface) fix: Details screen
+- Nothing changed...
 
 **Parsers update:**
 
-- Add new source: TruyenTranh3Q [vi]
+- [ManhwaIndo] Fixes
