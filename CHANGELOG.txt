@@ -3,6 +3,9 @@
 - UI (User Interface) improvements:
   - Reader info bar is now transparent by default.
   - Fix reader info bar icon color.
+- Improvement: Add option to make the status bar transparent in the reading interface (Broken*)
+
+* **Tested by Nightly contributors**
 
 **Parsers update:**
 
