@@ -1,7 +1,9 @@
 **App update:**
 
-- Nothing changed...
+- UI (User Interface) improvements:
+  - Reader info bar is now transparent by default.
+  - Fix reader info bar icon color.
 
 **Parsers update:**
 
-- [ManhwaIndo] Fixes
+- Nothing changed...

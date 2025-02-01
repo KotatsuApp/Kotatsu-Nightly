@@ -75,6 +75,12 @@ class ReaderInfoBarView @JvmOverloads constructor(
 	private val innerWidth
 		get() = width - paddingLeft - paddingRight - insetLeft - insetRight
 
+	var drawBackground: Boolean = false
+		set(value) {
+			field = value
+			invalidate()
+		}
+
 	var isTimeVisible: Boolean = true
 		set(value) {
 			field = value
@@ -92,6 +98,7 @@ class ReaderInfoBarView @JvmOverloads constructor(
 		insetLeftFallback = if (isRtl) insetEnd else insetStart
 		insetRightFallback = if (isRtl) insetStart else insetEnd
 		insetTopFallback = minOf(insetLeftFallback, insetRightFallback)
+		batteryIcon?.setTintList(colorText)
 	}
 
 	override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
@@ -108,7 +115,9 @@ class ReaderInfoBarView @JvmOverloads constructor(
 
 	override fun onDraw(canvas: Canvas) {
 		super.onDraw(canvas)
-		canvas.drawColor(currentBackgroundColor)
+		if (drawBackground) {
+			canvas.drawColor(currentBackgroundColor)
+		}
 		computeTextHeight()
 		val h = innerHeight.toFloat()
 		val ty = h / 2f + textBounds.height() / 2f - textBounds.bottom
@@ -206,6 +215,7 @@ class ReaderInfoBarView @JvmOverloads constructor(
 		colorBackground = (context.getThemeColorStateList(
 			if (isBlackOnWhite != isDarkTheme) materialR.attr.colorSurface else materialR.attr.colorSurfaceInverse,
 		) ?: ColorStateList.valueOf(if (isBlackOnWhite) Color.WHITE else Color.BLACK)).withAlpha(ALPHA_BG)
+		batteryIcon?.setTintList(colorText)
 		drawableStateChanged()
 	}
 
