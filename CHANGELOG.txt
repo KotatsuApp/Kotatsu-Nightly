@@ -1,12 +1,10 @@
 **App update:**
 
-- UI (User Interface) improvements:
-  - Reader info bar is now transparent by default.
-  - Fix reader info bar icon color.
-- Improvement: Add option to make reader info bar transparent in reading UI (Broken*)
-
-* **Tested by Nightly contributors**
+- UI (User Interface) fixes: Reader info bar background settings (Bug from N20250202)
 
 **Parsers update:**
 
-- Nothing changed...
+- [ManhwaIndo] Refactor
+- [TruyenTranh3Q] Refactor
+- Update sources domain: ManhuaScan - Kaliscan [en]
+- Advanced: Replace try-catch with use{} in parse functions
