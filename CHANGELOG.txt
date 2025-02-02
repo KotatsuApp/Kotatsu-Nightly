@@ -6,5 +6,5 @@
 
 - [ManhwaIndo] Refactor
 - [TruyenTranh3Q] Refactor
-- Update sources domain: ManhuaScan - Kaliscan [en]
+- Update sources domain: ManhuaScan - Kaliscan [en], CManga [vi], LXManga [vi], DocTruyen3Q [vi]
 - Advanced: Replace try-catch with use{} in parse functions
