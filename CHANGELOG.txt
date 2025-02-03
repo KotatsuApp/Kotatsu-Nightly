@@ -1,7 +1,12 @@
 **App update:**
 
-**`- Updating... (Coming Soon)`**
+- UI (User Interface) fixes + improvements:
+	- Fix scroller handle being cut off
+	- Reorganize storage usage in-app settings
+- Improvements: Restore backups in background, allow to keep user data on app removal
+- Advanced: Update dependencies (libraries + parsers)
 
 **Parsers update:**
 
-**`- Updating... (Coming Soon)`**
+- [NetTruyenVie] Fixes
+- Add new source: Vcomycs [vi]
