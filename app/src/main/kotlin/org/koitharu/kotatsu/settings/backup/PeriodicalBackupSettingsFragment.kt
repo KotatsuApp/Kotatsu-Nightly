@@ -46,10 +46,10 @@ class PeriodicalBackupSettingsFragment : BasePreferenceFragment(R.string.periodi
 		super.onViewCreated(view, savedInstanceState)
 		viewModel.lastBackupDate.observe(viewLifecycleOwner, ::bindLastBackupInfo)
 		viewModel.backupsDirectory.observe(viewLifecycleOwner, ::bindOutputSummary)
+		viewModel.onError.observeEvent(viewLifecycleOwner, SnackbarErrorObserver(listView, this))
 		viewModel.isTelegramCheckLoading.observe(viewLifecycleOwner) {
 			findPreference<Preference>(AppSettings.KEY_BACKUP_TG_TEST)?.isEnabled = !it
 		}
-		viewModel.onError.observeEvent(viewLifecycleOwner, SnackbarErrorObserver(listView, this))
 	}
 
 	override fun onPreferenceTreeClick(preference: Preference): Boolean {
@@ -60,7 +60,6 @@ class PeriodicalBackupSettingsFragment : BasePreferenceFragment(R.string.periodi
 				viewModel.checkTelegram()
 				true
 			}
-			
 			else -> return super.onPreferenceTreeClick(preference)
 		}
 		if (!result) {

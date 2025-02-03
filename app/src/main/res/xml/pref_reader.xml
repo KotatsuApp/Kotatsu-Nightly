@@ -120,7 +120,7 @@
 		android:summary="@string/reader_info_bar_summary"
 		android:title="@string/reader_info_bar"
 		app:allowDividerAbove="true" />
-	
+
 	<SwitchPreferenceCompat
 		android:defaultValue="true"
 		android:dependency="reader_bar"
