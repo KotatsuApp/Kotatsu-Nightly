@@ -1,12 +1,10 @@
 **App update:**
 
-- UI (User Interface) fixes + improvements:
-	- Fix scroller handle being cut off
-	- Reorganize storage usage in-app settings
-- Improvements: Restore backups in background, allow to keep user data on app removal
-- Advanced: Update dependencies (libraries + parsers)
+- Coming soon...
 
 **Parsers update:**
 
-- [NetTruyenVie] Fixes
-- Add new source: Vcomycs [vi]
+- Tweak: Add NSFW flags for:
+	- Niji Translations [ar]
+	- WebtoonEmpire [ar]
+	- Yurimoonsub.blogspot.com [ar]

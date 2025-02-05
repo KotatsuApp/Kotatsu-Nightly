@@ -14,9 +14,11 @@ import org.koitharu.kotatsu.core.nav.router
 import org.koitharu.kotatsu.core.prefs.AppSettings
 import org.koitharu.kotatsu.core.prefs.ReaderAnimation
 import org.koitharu.kotatsu.core.prefs.ReaderBackground
+import org.koitharu.kotatsu.core.prefs.ReaderControl
 import org.koitharu.kotatsu.core.prefs.ReaderMode
 import org.koitharu.kotatsu.core.ui.BasePreferenceFragment
 import org.koitharu.kotatsu.core.util.ext.setDefaultValueCompat
+import org.koitharu.kotatsu.parsers.util.mapToSet
 import org.koitharu.kotatsu.parsers.util.names
 import org.koitharu.kotatsu.settings.utils.MultiSummaryProvider
 import org.koitharu.kotatsu.settings.utils.PercentSummaryProvider
@@ -30,12 +32,7 @@ class ReaderSettingsFragment :
 	override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
 		addPreferencesFromResource(R.xml.pref_reader)
 		findPreference<ListPreference>(AppSettings.KEY_READER_MODE)?.run {
-			entryValues = arrayOf(
-				ReaderMode.STANDARD.name,
-				ReaderMode.REVERSED.name,
-				ReaderMode.VERTICAL.name,
-				ReaderMode.WEBTOON.name,
-			)
+			entryValues = ReaderMode.entries.names()
 			setDefaultValueCompat(ReaderMode.STANDARD.name)
 		}
 		findPreference<ListPreference>(AppSettings.KEY_READER_ORIENTATION)?.run {
@@ -46,6 +43,11 @@ class ReaderSettingsFragment :
 				ActivityInfo.SCREEN_ORIENTATION_USER_LANDSCAPE.toString(),
 			)
 			setDefaultValueCompat(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED.toString())
+		}
+		findPreference<MultiSelectListPreference>(AppSettings.KEY_READER_CONTROLS)?.run {
+			entryValues = ReaderControl.entries.names()
+			setDefaultValueCompat(ReaderControl.DEFAULT.mapToSet { it.name })
+			summaryProvider = MultiSummaryProvider(R.string.none)
 		}
 		findPreference<ListPreference>(AppSettings.KEY_READER_BACKGROUND)?.run {
 			entryValues = ReaderBackground.entries.names()

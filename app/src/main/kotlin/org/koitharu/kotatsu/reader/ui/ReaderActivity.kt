@@ -33,6 +33,7 @@ import org.koitharu.kotatsu.core.exceptions.resolve.DialogErrorObserver
 import org.koitharu.kotatsu.core.nav.AppRouter
 import org.koitharu.kotatsu.core.nav.router
 import org.koitharu.kotatsu.core.prefs.AppSettings
+import org.koitharu.kotatsu.core.prefs.ReaderControl
 import org.koitharu.kotatsu.core.prefs.ReaderMode
 import org.koitharu.kotatsu.core.ui.BaseFullscreenActivity
 import org.koitharu.kotatsu.core.ui.util.MenuInvalidator
@@ -108,7 +109,6 @@ class ReaderActivity :
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(ActivityReaderBinding.inflate(layoutInflater))
-		screenOrientationHelper.init(settings.readerScreenOrientation)
 		readerManager = ReaderManager(supportFragmentManager, viewBinding.container, settings)
 		supportActionBar?.setDisplayHomeAsUpEnabled(true)
 		touchHelper = TapGridDispatcher(this, this)
@@ -145,11 +145,14 @@ class ReaderActivity :
 		viewModel.content.observe(this) {
 			onLoadingStateChanged(viewModel.isLoading.value)
 		}
+		viewModel.readerControls.observe(this, ::onReaderControlsChanged)
 		viewModel.isKeepScreenOnEnabled.observe(this, this::setKeepScreenOn)
 		viewModel.isInfoBarTransparent.observe(this) { viewBinding.infoBar.drawBackground = !it }
 		viewModel.isInfoBarEnabled.observe(this, ::onReaderBarChanged)
 		viewModel.isBookmarkAdded.observe(this, MenuInvalidator(this))
-		viewModel.isPagesSheetEnabled.observe(this, MenuInvalidator(viewBinding.toolbarBottom))
+		val bottomMenuInvalidator = MenuInvalidator(viewBinding.toolbarBottom)
+		viewModel.isPagesSheetEnabled.observe(this, bottomMenuInvalidator)
+		screenOrientationHelper.observeAutoOrientation().observe(this, bottomMenuInvalidator)
 		viewModel.onShowToast.observeEvent(this) { msgId ->
 			Snackbar.make(viewBinding.container, msgId, Snackbar.LENGTH_SHORT)
 				.setAnchorView(viewBinding.appbarBottom)
@@ -162,7 +165,9 @@ class ReaderActivity :
 			viewBinding.zoomControl.isVisible = it
 		}
 		addMenuProvider(ReaderMenuTopProvider(viewModel))
-		viewBinding.toolbarBottom.addMenuProvider(ReaderMenuBottomProvider(this, readerManager, viewModel))
+		viewBinding.toolbarBottom.addMenuProvider(
+			ReaderMenuBottomProvider(this, readerManager, screenOrientationHelper, this, viewModel),
+		)
 	}
 
 	override fun getParentActivityIntent(): Intent? {
@@ -295,6 +300,13 @@ class ReaderActivity :
 		} else {
 			window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 		}
+	}
+
+	private fun onReaderControlsChanged(controls: Set<ReaderControl>) = with(viewBinding) {
+		buttonPrev.isVisible = ReaderControl.PREV_CHAPTER in controls
+		buttonNext.isVisible = ReaderControl.NEXT_CHAPTER in controls
+		slider.isVisible = ReaderControl.SLIDER in controls
+		toolbarBottom.invalidateMenu()
 	}
 
 	private fun setUiIsVisible(isUiVisible: Boolean) {
