@@ -1,10 +1,10 @@
 **App update:**
 
-- UI (User Interface) improvements: Reader:
+- UI (User Interface) improvements: Reader bottom bar:
 	- Add save page button
 	- Add screen rotation button
-- Fixes: Emoji flags mapping, closing welcome bottom sheet
-- Improvement: Reader bottom bar actions configurable
+- Fixes: Emoji flags mapping (wrong flags), closing welcome bottom sheet
+- Improvement: Now reader bottom bar actions configurable (customize by user)
 
 **Parsers update:**
 
