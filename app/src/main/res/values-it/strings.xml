@@ -21,9 +21,9 @@
     <string name="popular">Popolare</string>
     <string name="by_name">Per nome</string>
     <string name="downloads">Scaricati</string>
-    <string name="download_complete">Scaricamento finito</string>
+    <string name="download_complete">Download finito</string>
     <string name="processing_">Elaborazione…</string>
-    <string name="manga_downloading_">Scaricamento di manga…</string>
+    <string name="manga_downloading_">Downloading…</string>
     <string name="search_manga">Cerca manga</string>
     <string name="search">Cerca</string>
     <string name="share_s">Condividi %s</string>
@@ -113,7 +113,7 @@
     <string name="other_storage">Altro spazio di archiviazione</string>
     <string name="cannot_find_available_storage">Impossibile trovare uno spazio di archiviazione disponibile</string>
     <string name="not_available">Non disponibile</string>
-    <string name="manga_save_location">Cartella di scaricamento</string>
+    <string name="manga_save_location">Cartella download</string>
     <string name="pages_animation">Animazione delle pagine</string>
     <string name="recent_manga">Manga recenti</string>
     <string name="manga_shelf">Scaffale da manga</string>
@@ -218,7 +218,7 @@
     <string name="suggestions_excluded_genres">Escludi generi</string>
     <string name="removal_completed">Rimozione completata</string>
     <string name="text_delete_local_manga_batch">Eliminare gli elementi selezionati dal dispositivo in modo permanente\?</string>
-    <string name="download_slowdown">Rallentamento dello scaricamento</string>
+    <string name="download_slowdown">Download lento</string>
     <string name="local_manga_processing">Elaborazione dei manga salvati</string>
     <string name="chapters_will_removed_background">I capitoli verranno rimossi in background</string>
     <string name="download_slowdown_summary">Aiuta ad evitare il blocco del tuo indirizzo IP</string>
@@ -354,7 +354,7 @@
     <string name="theme_name_miku">Miku</string>
     <string name="allow_unstable_updates">Permetti aggiornamenti instabili</string>
     <string name="allow_unstable_updates_summary">Ricevi notifiche riguardo versioni instabili</string>
-    <string name="download_started">Scaricamento iniziato</string>
+    <string name="download_started">Download iniziato</string>
     <string name="theme_name_sakura">Sakura</string>
     <string name="languages">Lingue</string>
     <string name="zoom_in">Ingrandire</string>
@@ -774,4 +774,12 @@
     <string name="all_sources_enabled">Tutte le fonti sono abilitate</string>
     <string name="enable_all_sources">Abilità tutte le fonti manga</string>
     <string name="enable_all_sources_summary">Tutte le fonti manga disponibili saranno abilitate permanentemente</string>
+    <string name="reader_info_bar_transparent">Barra informazione del lettore trasparente</string>
+    <string name="restoring_backup">Ripristinando il backup</string>
+    <string name="backup_restored_background">Il backup verrà ripristinato in background</string>
+    <string name="reader_controls_in_bottom_bar">Controlli del lettore nella barra in basso</string>
+    <string name="screen_rotation_locked">Rotazione schermo bloccata</string>
+    <string name="screen_rotation_unlocked">Rotazione schermo sbloccata</string>
+    <string name="chapters_and_pages">Capitoli e pagine</string>
+    <string name="pages_slider">Slider di cambio pagina</string>
 </resources>

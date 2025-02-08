@@ -1,9 +1,9 @@
 **App update:**
 
-- Nothing changed...
+- Update translations: Vietnamese, French, Chinese, Italian,...
+- Advanced: Update dependencies (parsers)
 
 **Parsers update:**
 
-- [NetTruyen, NetTruyenVie] Fix reversed chapter list
-- [NetTruyenVie] Add manga description
-- [NetTruyenFE, NetTruyenLL, NetTruyenSSR, NetTruyenUU] Fixes
+- [wpcomics] Fixes
+- Add new source: Góc Truyện Tranh [vi]

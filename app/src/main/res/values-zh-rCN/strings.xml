@@ -774,4 +774,11 @@
     <string name="enable_all_sources">开启所有漫画图源</string>
     <string name="all_sources_enabled">已启动所有漫画图源</string>
     <string name="enable_all_sources_summary">所有图源将会被启动</string>
+    <string name="reader_info_bar_transparent">透明阅读器信息栏</string>
+    <string name="restoring_backup">正在恢复备份</string>
+    <string name="backup_restored_background">将在后台恢复备份</string>
+    <string name="pages_slider">页面切换滑动条</string>
+    <string name="screen_rotation_locked">已锁定屏幕方向</string>
+    <string name="screen_rotation_unlocked">已解锁屏幕方向</string>
+    <string name="chapters_and_pages">章节与页面</string>
 </resources>
